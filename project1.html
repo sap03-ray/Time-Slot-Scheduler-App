@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Slot Scheduler</title>
+  <link rel="stylesheet" href="stylesproject.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Choose a Time Slot</h1>
+    <div id="week-selector">
+      <button id="prev-week">&laquo; Previous Week</button>
+      <button id="next-week">Next Week &raquo;</button>
+    </div>
+    <div id="time-slot-calendar"></div>
+
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="close">&times;</span>
+        <h2>Confirm Your Time Slot</h2>
+        <p id="slot-details"></p>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" placeholder="Your email" required>
+        <span id="email-error" class="error-message"></span>
+        <button id="confirm">Confirm</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
